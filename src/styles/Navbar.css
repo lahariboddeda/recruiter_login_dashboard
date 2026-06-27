@@ -1,0 +1,98 @@
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.05);
+}
+
+.navbar-left {
+  display: grid;
+  gap: 6px;
+}
+
+.page-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navbar-welcome {
+  color: #64748b;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-button,
+.logout-button {
+  border: none;
+  border-radius: 14px;
+  padding: 12px 16px;
+}
+
+.icon-button {
+  background: #f8fafc;
+}
+
+.logout-button {
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.profile-panel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.profile-details {
+  display: grid;
+}
+
+.profile-name {
+  font-weight: 700;
+}
+
+.role-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .top-navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-right {
+    justify-content: space-between;
+  }
+}
